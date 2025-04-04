@@ -1,0 +1,218 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background-color:  rgba(50, 52, 56, 0.8);
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+
+.menu-link{
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    color: rgb(255, 255, 255);
+}
+
+.menu-link::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg,grey , white );
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after{
+    width: 100%;
+}
+
+.foto-perfil{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 4px solid;
+}
+
+.inicio-titulo{
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.inicio {
+   min-height: 100vh;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.inicio-sub-titulo {
+    font-size: 2rem;
+    color: white;
+}
+
+.sobre {
+    padding: 6rem 2rem;
+}
+
+.sobre-titulo{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-caixa{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid ;
+    backdrop-filter: blur(10px);
+    background:   rgba(50, 52, 56, 0.8);
+}
+
+.sobre-paragrafo{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skills {
+    padding: 6rem 2rem;
+}
+
+.skills-titulo{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-caixa{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    background:   rgba(50, 52, 56, 0.8);
+}
+
+.projetos{
+    padding: 6rem 2rem;
+}
+
+.projeto-caixa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-card{
+    background-color:   rgba(50, 52, 56, 0.8);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projetos-car:hover{
+    box-shadow: 0 10px 20px ;
+    transform: translateY(-10px) scale(1.03);
+}
+
+.projetos-titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.projetos-imagem {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caixa-projeto{
+    padding: 1.5rem;
+}
+
+.paragrafo-projetos{
+    color: white;
+    line-height: 1.25rem;
+}
+
+.info-projeto{
+    margin-bottom: 5px;
+}
+
+.contato {
+    padding: 6rem 2rem;
+}
+.contato-titulo{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato-caixa{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    background:  rgba(50, 52, 56, 0.8);
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.foto-contato{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 20%;
+    background-color: white;
+}
+
+.image-link {
+    margin: 20px;
+    transition: transform 0.3s;
+}
+.image-link:hover {
+    transform: scale(1.05);
+}
